@@ -6,7 +6,7 @@ const express = require('express')
 const extractIpParameter = () =>
     process.argv[2] ? process.argv[2] : 'localhost';
 
-const ip = "https://rcalazansnapi.azurewebsites.net";//extractIpParameter();
+const ip = "rcalazansnapi.azurewebsites.net";//extractIpParameter();
 const port = process.env.PORT || 1337;
 
 app.set('ip', ip);
