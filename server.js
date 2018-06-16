@@ -4,7 +4,7 @@ const express = require('express')
     , cors = require('cors');
 
 const extractIpParameter = () => 
-    process.argv[2] ? process.argv[2] : process.argv[1];
+    process.argv[2] ? process.argv[2] : 'andretiagoss.azurewebsites.net';
 
 const ip = extractIpParameter();
 app.set('ip', ip); 
