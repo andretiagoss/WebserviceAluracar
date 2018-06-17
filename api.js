@@ -76,7 +76,7 @@ module.exports = app => {
 
         const headers = {
             "Content-Type": "application/json; charset=utf-8",
-            "Authorization": "Basic ZTRkMzkyMDMtYmI2ZS00OGJiLThlMTQtNjU4ZWY4YTA2YTYx"
+            "Authorization": "Basic ODI5YWE1MzMtYTRlYi00NWFhLWFiOTEtN2VhZTYyNWYxODg3"
         };
         
         const options = {
