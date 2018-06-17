@@ -4,12 +4,12 @@ const express = require('express')
     , cors = require('cors');
 
 const extractIpParameter = () => 
-    process.argv[2] ? process.argv[2] : 'andretiagoss.azurewebsites.net';
+    process.argv[2] ? process.argv[2] : 'localhost';
 
-const ip = extractIpParameter();
-app.set('ip', ip); 
-
+const ip = "andretiagoss.azurewebsites.net";//extractIpParameter();
 const port = process.env.PORT || 1337;   
+
+app.set('ip', ip); 
 
 app.use(cors());
 app.use(express.static('public'));
