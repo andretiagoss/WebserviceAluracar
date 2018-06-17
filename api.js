@@ -1,4 +1,4 @@
-const https = require('https');
+const http = require('https');
 
 module.exports = app => {
 
@@ -87,7 +87,7 @@ module.exports = app => {
             headers: headers
         };
         
-        const req = https.request(options, function(res) {  
+        const req = http.request(options, function(res) {  
           res.on('data', function(data) {
             // console.log("Response:");
             // console.log(JSON.parse(data));
