@@ -6,7 +6,7 @@ const express = require('express')
 const extractIpParameter = () => 
     process.argv[2] ? process.argv[2] : 'localhost';
 
-const ip = "andretiagoss.azurewebsites.net";//extractIpParameter();
+const ip = "wsaluracar.azurewebsites.net";//extractIpParameter();
 const port = process.env.PORT || 1337;   
 
 app.set('ip', ip); 
@@ -18,3 +18,4 @@ app.use(bodyParser.json());
 require('./api')(app);
 
 app.listen(port);
+
